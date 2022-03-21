@@ -9,7 +9,7 @@ public class Barbarian extends Character {
 	/**
 	* Constructor of Barbarian thar receives as argument a WeaponBehaviour.
 	*
-	* @param w Weapon with which the Barbarian will fight FULL COPY now 
+	* @param w Weapon with which the Barbarian will fight FULL COPY now DONE
 	*/
 	public Barbarian(WeaponBehaviour w) {
 		super(w);
