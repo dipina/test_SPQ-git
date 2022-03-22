@@ -18,7 +18,7 @@ public class Barbarian extends Character {
 	@Override
 	public void display() {
 	// TODO Auto-generated method stub ...
-		logger.info("You are a strong, hulky barbarian!!! CODE WITHIN BRANCH testing5 rubbish .....");
+		logger.info("You are a strong, hulky barbarian!!!  .....");
 		System.out.println("Modified from A-B?");;;;;;
 	}
 }
