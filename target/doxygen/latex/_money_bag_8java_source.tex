@@ -1,0 +1,120 @@
+\hypertarget{_money_bag_8java_source}{}\doxysection{Money\+Bag.\+java}
+\label{_money_bag_8java_source}\index{src/main/java/es/deusto/testing/junit/MoneyBag.java@{src/main/java/es/deusto/testing/junit/MoneyBag.java}}
+\mbox{\hyperlink{_money_bag_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00007}00007 \textcolor{keyword}{package }es.deusto.testing.junit;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00009}00009 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00010}00010 \textcolor{keyword}{import} java.util.List;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00023}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{00023}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}} \textcolor{keyword}{implements} \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00024}00024     \textcolor{keyword}{private} List<Money> fMonies= \textcolor{keyword}{new} ArrayList<Money>(5);}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00026}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a8d2d54a342d2de2b75530600123efc9a}{00026}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a8d2d54a342d2de2b75530600123efc9a}{create}}(\mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} m1, \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} m2) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00027}00027         \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}} result= \textcolor{keyword}{new} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}}();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00028}00028         m1.\mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money_ae45bc758e69a0017f083f11d050c53cb}{appendTo}}(result);}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00029}00029         m2.\mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money_ae45bc758e69a0017f083f11d050c53cb}{appendTo}}(result);}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00030}00030         \textcolor{keywordflow}{return} result.simplify();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00032}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_ab3be83ff12fa6d19b67b669194120d00}{00032}}     \textcolor{keyword}{public} \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_ab3be83ff12fa6d19b67b669194120d00}{add}}(\mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} m) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00033}00033         \textcolor{keywordflow}{return} m.\mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money_ac47c8940f0565bd9eda16730170bc9f7}{addMoneyBag}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00034}00034     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00035}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a06ecedbf53ba09d34276fe177e3169bc}{00035}}     \textcolor{keyword}{public} \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a06ecedbf53ba09d34276fe177e3169bc}{addMoney}}(\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}} m) \{ }
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00036}00036         \textcolor{keywordflow}{return} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}}.\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a8d2d54a342d2de2b75530600123efc9a}{create}}(m, \textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00037}00037     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00038}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_ab329e6a2811b83a2b1670b79be92249d}{00038}}     \textcolor{keyword}{public} \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_ab329e6a2811b83a2b1670b79be92249d}{addMoneyBag}}(\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}} s) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00039}00039         \textcolor{keywordflow}{return} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}}.\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a8d2d54a342d2de2b75530600123efc9a}{create}}(s, \textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00040}00040     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00041}00041     \textcolor{keywordtype}{void} appendBag(\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}} aBag) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00042}00042         \textcolor{keywordflow}{for} (\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}} each : aBag.fMonies)}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00043}00043             appendMoney(each);}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00045}00045     \textcolor{keywordtype}{void} appendMoney(Money aMoney) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00046}00046         \textcolor{keywordflow}{if} (aMoney.isZero()) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00047}00047         IMoney old= findMoney(aMoney.currency());}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00048}00048         \textcolor{keywordflow}{if} (old == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00049}00049             fMonies.add(aMoney);}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00050}00050             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00051}00051         \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00052}00052         fMonies.remove(old);}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00053}00053         Money sum= (Money) old.add(aMoney);}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00054}00054         \textcolor{keywordflow}{if} (sum.isZero()) }
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00055}00055             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00056}00056         fMonies.add(sum);}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00057}00057     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00058}00058     @Override}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00059}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a80926d10c9619bd2ad84eabe52ca03bb}{00059}}     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a80926d10c9619bd2ad84eabe52ca03bb}{equals}}(Object anObject) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00060}00060         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_abebc5bc39c3343cb3c4e5fb291fd5893}{isZero}}())}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00061}00061             \textcolor{keywordflow}{if} (anObject instanceof \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}})}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00062}00062                 \textcolor{keywordflow}{return} ((\mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}})anObject).isZero();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00064}00064         \textcolor{keywordflow}{if} (anObject instanceof \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}}) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00065}00065             \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}} aMoneyBag= (\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}})anObject;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00066}00066             \textcolor{keywordflow}{if} (aMoneyBag.fMonies.size() != fMonies.size())}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00067}00067                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00069}00069             \textcolor{keywordflow}{for} (\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}} each : fMonies)}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00070}00070                 \textcolor{keywordflow}{if} (! aMoneyBag.contains(each))}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00071}00071                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00072}00072             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00073}00073         \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00074}00074         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00075}00075     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00076}00076     \textcolor{keyword}{private} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}} findMoney(String currency) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00077}00077         \textcolor{keywordflow}{for} (\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}} each : fMonies)}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00078}00078             \textcolor{keywordflow}{if} (each.currency().equals(currency))}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00079}00079                 \textcolor{keywordflow}{return} each;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00080}00080         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00081}00081     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00082}00082     \textcolor{keyword}{private} \textcolor{keywordtype}{boolean} contains(Money m) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00083}00083         Money found= findMoney(m.currency());}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00084}00084         \textcolor{keywordflow}{if} (found == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00085}00085         \textcolor{keywordflow}{return} found.amount() == m.amount();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00086}00086     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00087}00087     @Override}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00088}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_ae2c0d290a37a617f0a07134bf95162eb}{00088}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_ae2c0d290a37a617f0a07134bf95162eb}{hashCode}}() \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00089}00089         \textcolor{keywordtype}{int} hash= 0;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00090}00090         \textcolor{keywordflow}{for} (\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}} each : fMonies)}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00091}00091             hash\string^= each.hashCode();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00092}00092         \textcolor{keywordflow}{return} hash;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00093}00093     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00094}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_abebc5bc39c3343cb3c4e5fb291fd5893}{00094}}     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_abebc5bc39c3343cb3c4e5fb291fd5893}{isZero}}() \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00095}00095         \textcolor{keywordflow}{return} fMonies.size() == 0;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00096}00096     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00097}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_aa20ce4cc70c2ba0bc9a5ccb96635d506}{00097}}     \textcolor{keyword}{public} \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_aa20ce4cc70c2ba0bc9a5ccb96635d506}{multiply}}(\textcolor{keywordtype}{int} factor) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00098}00098         \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}} result= \textcolor{keyword}{new} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}}();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00099}00099         \textcolor{keywordflow}{if} (factor != 0)}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00100}00100             \textcolor{keywordflow}{for} (\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}} each : fMonies)}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00101}00101                 result.appendMoney((\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}}) each.multiply(factor));}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00102}00102         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00103}00103     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00104}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_abf06bf97e548f95038756608fe0c8351}{00104}}     \textcolor{keyword}{public} \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_abf06bf97e548f95038756608fe0c8351}{negate}}() \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00105}00105         \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}} result= \textcolor{keyword}{new} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}}();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00106}00106         \textcolor{keywordflow}{for} (\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}} each : fMonies)}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00107}00107             result.appendMoney((\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}}) each.negate());}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00108}00108         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00109}00109     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00110}00110     \textcolor{keyword}{private} \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} simplify() \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00111}00111         \textcolor{keywordflow}{if} (fMonies.size() == 1)}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00112}00112             \textcolor{keywordflow}{return} fMonies.iterator().next();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00113}00113         \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00114}00114     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00115}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a7f1803fe267edca895cdf752b5f46560}{00115}}     \textcolor{keyword}{public} \mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a7f1803fe267edca895cdf752b5f46560}{subtract}}(\mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money}{IMoney}} m) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00116}00116         \textcolor{keywordflow}{return} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_ab3be83ff12fa6d19b67b669194120d00}{add}}(m.\mbox{\hyperlink{interfacees_1_1deusto_1_1testing_1_1junit_1_1_i_money_a741967d7aa89055b6873619303b11385}{negate}}());}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00117}00117     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00118}00118     @Override}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00119}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a85b49bdc3ff191abdaa1ad1a065ec5f1}{00119}}     \textcolor{keyword}{public} String \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_a85b49bdc3ff191abdaa1ad1a065ec5f1}{toString}}() \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00120}00120         StringBuffer buffer = \textcolor{keyword}{new} StringBuffer();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00121}00121         buffer.append(\textcolor{stringliteral}{"{}\{"{}});}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00122}00122         \textcolor{keywordflow}{for} (\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money}{Money}} each : fMonies)}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00123}00123             buffer.append(each);}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00124}00124         buffer.append(\textcolor{stringliteral}{"{}\}"{}});}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00125}00125         \textcolor{keywordflow}{return} buffer.toString();}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00126}00126     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00127}\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_ac8a5877b35b12939ce14543872ed18af}{00127}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag_ac8a5877b35b12939ce14543872ed18af}{appendTo}}(\mbox{\hyperlink{classes_1_1deusto_1_1testing_1_1junit_1_1_money_bag}{MoneyBag}} m) \{}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00128}00128         m.appendBag(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00129}00129     \}}
+\DoxyCodeLine{\Hypertarget{_money_bag_8java_source_l00130}00130 \}}
+
+\end{DoxyCode}
