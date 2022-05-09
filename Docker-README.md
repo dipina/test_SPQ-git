@@ -121,7 +121,7 @@ services:
 ```
 
 16. Run the docker-compose
-````
+```bash
 	docker container stop database
 	docker container stop jersey-server
 	docker container ls
@@ -129,7 +129,7 @@ services:
 	docker-compose up -d
 	docker-compose exec server mvn datanucleus:schema-create exec:java -Pdatos
 	docker exec -it spq-simple-service_server_1 /bin/bash
-````
+```
 
 17. Test the service deployed with Docker-compose which accesses to a database in MySQL: http://localhost:9080/myapp/users
 
