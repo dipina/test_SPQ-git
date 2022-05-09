@@ -1,2 +1,9 @@
-target/doxygen
-target/site
+/target/
+.classpath
+.project
+.settings/
+/bin/
+
+.vscode/
+
+datanucleus.log
