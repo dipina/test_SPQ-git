@@ -1,6 +1,6 @@
 # Commands to test Docker
 
-## Testing Docker
+### Testing Docker
 0. Create a Dockerfile
 ```yaml
 # Specifies the base image
