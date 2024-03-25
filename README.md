@@ -5,8 +5,8 @@ Ejemplo de Maven + Jersey + JDO
 ![java ci workflow](https://github.com/unaguil/spq-simple-service/actions/workflows/java-ci.yml/badge.svg) [![codecov](https://codecov.io/gh/unaguil/spq-simple-service/branch/main/graph/badge.svg?token=VWV6C72V4T)](https://codecov.io/gh/unaguil/spq-simple-service)
 
 Configuración
-------------- 
-
+---------------- 
+--
 **Construcción y prueba**
 
 Se puede construir el proyecto y lanzar las pruebas unitarias con el comando
